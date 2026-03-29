@@ -1,0 +1,32 @@
+*{
+    margin: ();
+    padding: ();
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: black;
+    background-color: burlywood;
+    font-size:xx-large;
+    font-family:'Courier New', Courier, monospace;
+}
+
+div{
+     color: aqua;
+    background-color: black;
+    font-style:normal;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items:center;
+    line-height: 1.2cm;
+}
+
+li{
+    align-items: flex-end;
+    color:black;
+    background-color:lightseagreen;
+    font-size: 20px;
+}

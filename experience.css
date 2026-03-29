@@ -1,0 +1,25 @@
+*{
+    margin: ();
+    padding: ();
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: aqua;
+    background-color: black;
+}
+
+div{
+    color: saddlebrown;
+    background-color: black;
+    font-size: large;
+     align-items: center;
+     line-height: 1cm;
+}
+
+.id{
+    align-items: center;
+}

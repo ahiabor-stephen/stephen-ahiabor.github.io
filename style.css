@@ -1,0 +1,228 @@
+*{
+    margin: ();
+    padding: ();
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: rgb(9, 210, 224);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active{
+color: rgb(255, 123, 0);
+border-bottom: 3px solid red;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid red;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: black;
+        border-top: 0.1rem solid black;
+    }
+
+    nav.a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem ();
+    }
+
+    nav.a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-radius: 0.5rem solid red;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: rgb(13, 219, 209);
+}
+
+.home.home.h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img{
+    position: relative;
+    width: 32w;
+    border-radius: 50%;
+    box-shadow: 0025px solid red;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+
+
+    
+}
+.home-img{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+
+.social.links a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: red;
+    box-shadow: 0 025px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: 0.3;
+    font-weight: 600;
+    border: 2px solid rgb(7, 204, 89);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: white;
+    color: black;
+    box-shadow: 25px red;
+}
+
+.tying.text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing.text span{
+    position: relative;
+}
+
+.typing.text span:before{
+    content: " graduate from Valley View University and Kofridua Technical University";
+    color: rgb(7, 177, 207);
+    animation: words 20s infinite;
+}
+
+.typing.text span after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: 8;
+    animation: cursor 0.6s;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid rgb(6, 207, 180);
+
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        color: aqua;
+        content:"project manager";
+    }
+    21%, 40%{
+        content: "Business Administrator and a Business Information analyst";
+    }
+}
+
+footer {
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 15px;
+  }
